@@ -13,4 +13,7 @@ session_start();
      비밀번호:<input type="password" name="pw"><br></p>
      <input type="submit" value="로그인">
    </form>
+   <form action="signup.php" method="post">
+   <input type="submit" value="회원가입">
+   </form>
  </body>
