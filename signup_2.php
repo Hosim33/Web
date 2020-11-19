@@ -5,7 +5,7 @@ $name = $_POST['name']; $email = $_POST['email'];
 if( $id==NULL || $pw==NULL || $name==NULL || $email==NULL )
 {
   echo "빈 칸을 모두 채워주세요.";
-  echo "<a href="/signup.php">이전으로</a>";
+  echo '<a href="/signup.php">이전으로</a>';
   exit();
 }
 $con = mysqli_connect("localhost","root","990531","mydb") or die("mysql connect error");
@@ -14,7 +14,7 @@ $result = mysqli_query($con, $query) or die("query error");
 $count = mysqli_num_rows($result);
 if($count == 1) {
   echo "중복된 id 입니다.";
-  echo "<a href="/signup.php">이전으로</a>";
+  echo '<a href="/signup.php">이전으로</a>';
   exit();
 }
 else {
